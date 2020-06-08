@@ -1,0 +1,39 @@
+@font-face {
+	font-family: 'Lato Regular';
+	src: url('../../fonts/Lato/Lato-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../../fonts/Roboto/Roboto-Light.ttf');
+}
+
+.featuredImg {
+	width: 350px;
+	height: 235px;
+	object-fit: cover;
+}
+
+.newsContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.postContainer {
+	flex: 1;
+	width: 350px;
+	margin-bottom: 35px;
+}
+
+.excerpt {
+	width: 350px;
+	font-family: Roboto;
+	font-size: 1.1em;
+}
+
+h2 {
+	font-family: 'Lato Regular';
+	font-weight: normal;
+	width: 350px;
+}
