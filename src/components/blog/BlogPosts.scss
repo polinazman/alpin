@@ -1,16 +1,6 @@
-@font-face {
-	font-family: 'Lato Regular';
-	src: url('../../fonts/Lato/Lato-Regular.ttf');
-}
-
-@font-face {
-	font-family: 'Roboto';
-	src: url('../../fonts/Roboto/Roboto-Light.ttf');
-}
-
 .featuredImg {
-	width: 350px;
-	height: 235px;
+	width: 300px;
+	height: 205px;
 	object-fit: cover;
 }
 
@@ -21,13 +11,21 @@
 }
 
 .postContainer {
-	flex: 1;
-	width: 350px;
+	display: flex;
+	flex-direction: column;
+	flex: 1 0 auto;
+	width: 300px;
 	margin-bottom: 35px;
+
+	h2, h3, p {
+		margin: unset;
+		margin-top: 5px;
+	}
 }
 
 .excerpt {
-	width: 350px;
+	flex: 1;
+	width: 300px;
 	font-family: Roboto;
 	font-size: 1.1em;
 }
@@ -35,5 +33,5 @@
 h2 {
 	font-family: 'Lato Regular';
 	font-weight: normal;
-	width: 350px;
+	width: 300px;
 }

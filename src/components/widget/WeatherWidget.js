@@ -1,13 +1,8 @@
 import React, { useEffect, useState } from 'react';
+import { ReactSVG } from 'react-svg';
 
-import '../../sass/style.scss';
-import LiftsIcon from '../../media/lifts.png';
-import SlopesIcon from '../../media/slopes.png';
-import CrossCountryIcon from '../../media/cross-country.png';
-import WebcamIcon from '../../media/webcam.png';
+const scss = require("./WeatherWidget.scss");
 
-const weatherIcon = '../../media/weather/weather-';
- 
 const WEATHER_API = 'https://api.fnugg.no/get/resort/114?sourceFields=name,opening_hours,location,contact,lifts,slopes,conditions';
 
 function WeatherWidget () {
@@ -24,7 +19,7 @@ function WeatherWidget () {
 		<div className="conditions">
 			<a href="https://www.yr.no/sted/Norge/Vestfold_og_Telemark/Kviteseid/Vr%C3%A5dal_skisenter/langtidsvarsel.html" target="_blank" rel="noopener">
 				<p>Vær</p>
-				<img src={`${weatherIcon}${conditions && conditions._source ? conditions._source.conditions.combined.bottom.symbol.fnugg_id : ''}.svg`} />
+				{conditions && conditions._source && <ReactSVG  className ="weatherIcon" src={"../../media/resort-weather-" + conditions._source.conditions.combined.bottom.symbol.fnugg_id + ".svg" } /> }
 				<span>
 					{conditions && conditions._source ? conditions._source.conditions.combined.bottom.temperature.value : ''} &deg;C
 				</span>
@@ -32,7 +27,7 @@ function WeatherWidget () {
 		</div>
 		<div className="conditions">
 			<p>Heiser</p>
-			<img src={LiftsIcon} alt="Lift icon"/>
+			<img src={require('../../media/lifts.png')} alt="Lift icon"/>
 			<span>
 				{conditions && conditions._source ? conditions._source.lifts.open : ''}
 				/{conditions && conditions._source ? conditions._source.lifts.count : ''}
@@ -40,20 +35,22 @@ function WeatherWidget () {
 		</div>
 		<div className="conditions">
 			<p>Nedfarter</p>
-			<img src={SlopesIcon} alt="Slope icon"/>
+			<img src={require('../../media/slopes.png')} alt="Slope icon"/>
 			<span>
 				{conditions && conditions._source ? conditions._source.slopes.open : ''}
 				/{conditions && conditions._source ? conditions._source.slopes.count : ''}
 			</span>
 		</div>
 		<div className="conditions">
-			<p>Skiløyper</p>
-			<img src={CrossCountryIcon} alt="Cross-country ski icon"/>
+			<a href="/skisenter/langrenn">
+				<p>Skiløyper</p>
+				<img src={require('../../media/cross-country.png')} alt="Cross-country ski icon"/>
+			</a>
 		</div>
 		<div className="conditions">
-			<a href="webcamera">
+			<a href="/webcamera.html">
 				<p>Webcamera</p>
-				<img src={WebcamIcon} alt="Webcam icon"/>
+				<img src={require('../../media/webcam.png')} alt="Webcam icon"/>
 			</a>
 		</div>
 	</div>

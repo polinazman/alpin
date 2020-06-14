@@ -1,12 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-
-import '../../sass/style.scss';
-import logo from '../../media/logo.png';
 
 const Logo = () => {
 	return (
-		<Link to="/"><img className="logo" src={logo} alt="Vrådal Panorama logo" /></Link>
+		<div className="logoContainer">
+			<a href="/"><img className="logo" src={require('../../media/logo.png')} alt="Vrådal Panorama logo" /></a>
+		</div>
 	);
 };
 
@@ -14,18 +12,14 @@ const UpperNav = () => {
 	return (
 		<ul className="upperNav">
 			<li>
-				<Link to="/om-vradal">Om Vrådal</Link>
+				<a href="/omvradal.html">Om Vrådal</a>
 			</li>
 			<li>
-				<Link to="/vinter">Vinter</Link>
+				<a href="/sommer.html">Sommer</a>
 			</li>
 			<li>
-				<Link to="/sommer">Sommer</Link>
+				<a href="/kontakt.html">Kontakt oss</a>
 			</li>
-			<li>
-				<Link to="/kontakt-oss">Kontakt oss</Link>
-			</li>
-			<li>Språk</li>
 		</ul>
 	);
 };
@@ -34,22 +28,22 @@ const MainNav = ({active}) => {
 	return (
 		<ul className="mainNav">
 			<li>
-				<Link to="/skisenter" className={active}>Skisenter</Link>
+				<a href="/skisenter.html" className={`${location.pathname === '/skisenter.html' ? "active-main" : ""}`}>Skisenter</a>
 			</li>
 			<li>
-				<Link to="/overnatting" className={active}>Overnatting</Link>
+				<a href="/overnatting.html" className={`${location.pathname === '/overnatting.html' ? "active-main" : ""}`}>Overnatting</a>
 			</li>
 			<li>
-				<Link to="/servering" className={active}>Servering</Link>
+				<a href="/servering.html" className={`${location.pathname === '/servering.html' ? "active-main" : ""}`}>Servering</a>
 			</li>
 			<li>
-				<Link to="/aktiviteter" className={active}>Aktiviteter</Link>
+				<a href="/hvaSkjer.html" className={`${location.pathname === '/hvaSkjer.html' ? "active-main" : ""}`}>Hva skjer</a>
 			</li>
 			<li>
-				<Link to="/reise" className={active}>Reise</Link>
+				<a href="/reise.html" className={`${location.pathname === '/reise.html' ? "active-main" : ""}`}>Reise</a>
 			</li>
 			<li>
-				<Link to="/eiendom" className={active}>Eiendom</Link>
+				<a href="/eiendom.html" className={`${location.pathname === '/eiendom.html' ? "active-main" : ""}`}>Eiendom</a>
 			</li>
 		</ul>
 	);

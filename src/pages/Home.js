@@ -1,17 +1,18 @@
 import React from 'react';
 
-import BlogPosts from '../components/blog/BlogPosts';
-import Navigation from '../components/navigation/Navigation';
-import WeatherWidget from '../components/widget/WeatherWidget';
-import Title from '../components/layout/Title';
-import Facebook from '../components/social-media/Facebook';
-import '../sass/style.scss';
-import Banner from '../media/home.jpg';
+import BlogPosts from 'components/blog/BlogPosts';
+import Navigation from 'components/navigation/Navigation';
+import WeatherWidget from 'components/widget/WeatherWidget';
+import Title from 'components/layout/Title';
+import Facebook from 'components/social-media/Facebook';
+import Instagram from 'components/social-media/Instagram';
+
+const banner = require('../media/skisenter.jpg');
 
 const Home = () => (
-	<div>
+	<>
 		<Navigation />
-		<div style={{backgroundImage: `url(${Banner})`}} className="banner">
+		<div style={{backgroundImage: `url(${banner})`}} className="banner">
 			<div></div>
 			<WeatherWidget />
 		</div>
@@ -21,6 +22,7 @@ const Home = () => (
 			<div className="contentGrid">
 				<div className="gridContainer">
 					<h2 className="blueHeading">Følg oss på Instagram</h2>
+					<Instagram />
 				</div>
 				<div className="gridContainer">
 					<h2 className="blueHeading">Facebook</h2>
@@ -29,7 +31,7 @@ const Home = () => (
 				</div>
 			</div>
 		</div>
-	</div>
+	</>
 );
 
 export default Home;

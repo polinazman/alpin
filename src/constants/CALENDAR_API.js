@@ -1,0 +1,1 @@
+export const CALENDAR_API = 'http://alpin.no/wp-json/tribe/events/v1/events';

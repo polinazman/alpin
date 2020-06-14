@@ -22,7 +22,7 @@ function PostPage () {
 		<div>
 			<Navigation />
 			<div className="contentContainer">
-				<h3 dangerouslySetInnerHTML={{__html: post.date}} />
+				<h3 dangerouslySetInnerHTML={{__html: new Date(post.date).toLocaleDateString()}} />
 				<h1 dangerouslySetInnerHTML={{__html: post && post.title ? post.title.rendered : ''}} />
 				<div 
 					className="copy"

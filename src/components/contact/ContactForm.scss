@@ -1,0 +1,34 @@
+form {
+	font-size: 1.1em;
+	display: grid;
+}
+
+button {
+	float: right;
+	margin-top: 20px;
+}
+
+.group {
+	margin-bottom: 10px;
+}
+
+label {
+	display: block;
+	padding: 7px 0;
+}
+
+input, textarea {
+	font-size: 1em;
+	width: 99%;
+	resize: none;
+
+	&:focus {
+		outline: solid #009DD1;
+	}
+}
+
+.error {
+	margin-top: 5px;
+	margin-bottom: 0;
+	color: #BF3604;
+}

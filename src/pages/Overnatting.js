@@ -1,18 +1,20 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 
-import Navigation from '../components/navigation/Navigation';
-import Title from '../components/layout/Title';
-import Tabs from '../components/layout/Tabs';
-import Banner from '../media/overnatting.jpg';
-import '../sass/style.scss';
+import Navigation from 'components/navigation/Navigation';
+import Title from 'components/layout/Title';
+import Tabs from 'components/layout/Tabs';
+import Footer from 'components/footer/Footer';
 
-function Overnatting() {
-	return (
-		<div>
+const banner = require('../media/overnatting.jpg');
+const scss = require("../sass/style.scss");
+
+const overnatting = (
+	<>
 			<Navigation />
-			<div style={{backgroundImage: `url(${Banner})`}} className="banner">
+			<div style={{backgroundImage: `url(${banner})`}} className="banner">
 				<div></div>
-				<div className="widget">
+				<div className="widget center">
 					<h1>Overnatting</h1>
 					<p>Vrådal byr på et bredt utvalg av overnatting, enten du reiser alene eller med familien.</p>
 					<p>Nedenfor finner du informasjon om hotell, camping og leiligheter og hytter til leie.</p>
@@ -27,32 +29,48 @@ function Overnatting() {
 						<div className="gridContainer">
 							<img src="https://r-cf.bstatic.com/images/hotel/max500/374/37471548.jpg" className="featuredImg" alt="" /> 
 							<h3>Straand Hotel</h3>
-							<p>This is a subheading that gives an insight to the news article</p>
-							<button className="btn-main"><a href="https://straand.no/" target="_blank" rel="noopener">Les mer</a></button>
+							<p>Straand Hotel i Vrådal er et helårsåpent hotell med 125 rom, moderne kurs & konferanse avdeling, restaurant, bar og svømmebasseng.</p>
+							<a className="link" href="https://straand.no/" target="_blank" rel="noopener">Besøk hjemmeside</a>
 						</div>
 						<div className="gridContainer">
-							<img src="../media/skisenter.jpg" className="featuredImg" alt="" />
-							<h3>Heading</h3>
-							<p>This is a subheading that gives an insight to the news article</p>
-							<button className="btn-main"><a href="" target="_blank" rel="noopener">Mer informasjon</a></button>
-						</div>
-						<div className="gridContainer">
-							<img src="../media/skisenter.jpg" className="featuredImg" alt="" />
-							<h3>Heading</h3>
-							<p>This is a subheading that gives an insight to the news article</p>
-							<button className="btn-main"><a href="" target="_blank" rel="noopener">Mer informasjon</a></button>
+							<img src="https://scontent-arn2-1.xx.fbcdn.net/v/t31.0-0/p640x640/18673236_1743057052378199_2822387989622449312_o.jpg?_nc_cat=107&_nc_sid=dd9801&_nc_ohc=bK850jWQjKcAX_PwbYc&_nc_ht=scontent-arn2-1.xx&_nc_tp=6&oh=e720e454de94ca25165cf4bc1bf1bea6&oe=5F088D8F" className="featuredImg" alt="" />
+							<h3>Seljord Hotel</h3>
+							<p>Seljord Hotel ligger 30km unna Vrådal.</p>
+							<p>Det er lite og intimt med overnatting i 21 rom – 18 dobbeltrom og 3 familierom med 4 sengeplasser. </p>
+							<a className="link" href="https://www.seljordhotel.no/" target="_blank" rel="noopener">Besøk hjemmeside</a>
 						</div>
 					</div>
 				</div>
 				<div label="Hytteutleie">
-					After 'while, <em>Crocodile</em>!
+					<div className="contentGrid">
+						<div className="gridContainer">
+							<img src="https://vraadalbooking.no/wp-content/uploads/2017/03/VBHytte.jpg" className="featuredImg" alt="" /> 
+							<h3>Vrådal Booking</h3>
+							<p>Vrådal Booking har utleie av hytter, leiligheter og hotellrom i Vrådal. De fleste av hyttene og leilighetene ligger i gangavstand til Vrådal Panorama Skisenter.</p>
+							<a className="link" href="https://vraadalbooking.no/" target="_blank" rel="noopener">Besøk hjemmeside</a>
+						</div>
+						<div className="gridContainer">
+							<img src="http://www.hyttegrend.no/var/hyttegrend/storage/images/hytter/likeside-haven-vraadal/utendoers/4514-1-nor-NO/utendoers_popup.jpg" className="featuredImg" alt="" />
+							<h3>Vrådal Hyttegrend</h3>
+							<p>Vrådal Hyttegrend består av 20 hytter. Alle hyttene har dusj, WC og badstu (Sauna), 8 senger, kjøkkenkrok med komfyr, oppvaskmaskin, mikrobølgeovn, kjøleskap med 20 l fryser og bestikk/utstyr for 8-10 personer.</p>
+							<a className="link" href="http://www.hyttegrend.no/" target="_blank" rel="noopener">Besøk hjemmeside</a>
+						</div>
+					</div>
 				</div>
 				<div label="Camping">
-					Nothing to see here, this tab is <em>extinct</em>!
+					<div className="contentGrid">
+						<div className="gridContainer">
+							<img src="https://aff.bstatic.com/images/hotel/max600/688/6887026.jpg" className="featuredImg" alt="" /> 
+							<h3>Nedre Strand Camping</h3>
+							<p>Den sydvendte campingplassen på Nedre Strand er  godt tilrettelagt for en ferie med campingidyll.</p>
+							<p>Campingplassen ligger kun 600m fra Vrådal sentrum og 5km fra Vrådal Panorama skisenter.</p>
+							<a className="link" href="https://www.nedrestrand.no/" target="_blank" rel="noopener">Besøk hjemmeside</a>
+						</div>
+					</div>
 				</div>
 			</Tabs>
-		</div>
-	);
-}
+			<Footer />
+		</>
+);
 
-export default Overnatting;
+ReactDOM.render(overnatting, document.getElementById('page'));
