@@ -1,13 +1,13 @@
 import React from 'react';
 
-import BlogPosts from 'components/blog/BlogPosts';
-import Navigation from 'components/navigation/Navigation';
-import WeatherWidget from 'components/widget/WeatherWidget';
-import Title from 'components/layout/Title';
-import Facebook from 'components/social-media/Facebook';
-import Instagram from 'components/social-media/Instagram';
+import BlogPosts from '../components/blog/BlogPosts';
+import Navigation from '../components/navigation/Navigation';
+import WeatherWidget from '../components/widget/WeatherWidget';
+import Title from '../components/layout/Title';
+import Facebook from '../components/social-media/Facebook';
+import Instagram from '../components/social-media/Instagram';
 
-const banner = require('../media/skisenter.jpg');
+const banner = require('../media/home.jpg');
 
 const Home = () => (
 	<>

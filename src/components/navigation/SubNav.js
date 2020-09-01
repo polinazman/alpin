@@ -1,53 +1,54 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function SubNav () {
 	return ( 
 		<div className="subnav">
 			<ul>
 				<li className="subnav-li" >
-					<a href="/skisenter/priser.html" className={`${location.pathname === '/skisenter/priser.html' ? "active-sub" : ""}`}>
+					<Link to="/priser" className={`${window.location.pathname === '/priser' ? "active-sub" : ""}`}>
 						Priser
-					</a>
+					</Link>
 				</li>
 				<li className="subnav-li">
-					<a href="/skisenter/apningstider.html" className={`${location.pathname === '/skisenter/apningstider.html' ? "active-sub" : ""}`}>
+					<Link to="/apningstider" className={`${window.location.pathname === '/apningstider' ? "active-sub" : ""}`}>
 						Åpningstider
-					</a>
+					</Link>
 				</li>
 				<li className="subnav-li">
-					<a href="/skisenter/skiutleie.html"className={`${location.pathname === '/skisenter/skiutleie.html' ? "active-sub" : ""}`}>
+					<Link to="/skiutleie-og-service"className={`${window.location.pathname === '/skiutleie-og-service' ? "active-sub" : ""}`}>
 						Skiutleie og service
-					</a>
+					</Link>
 				</li>
 				<li className="subnav-li">
-					<a href="/skisenter/loypekart.html" className={`${location.pathname === '/skisenter/loypekart.html' ? "active-sub" : ""}`}>
+					<Link to="/loypekart" className={`${window.location.pathname === '/loypekart' ? "active-sub" : ""}`}>
 						Løypekart
-					</a>
+					</Link>
 				</li>
 				<li className="subnav-li">
-					<a href="/skisenter/snopark.html" className={`${location.pathname === '/skisenter/snopark.html' ? "active-sub" : ""}`}>
+					<Link to="/snopark" className={`${window.location.pathname === '/snopark' ? "active-sub" : ""}`}>
 						Snøpark
-					</a>
+					</Link>
 				</li>
 				<li className="subnav-li">
-					<a href="/skisenter/barn.html" className={`${location.pathname === '/skisenter/barn.html' ? "active-sub" : ""}`}>
+					<Link to="/barn" className={`${window.location.pathname === '/barn' ? "active-sub" : ""}`}>
 						Barn
-					</a>
+					</Link>
 				</li>
 				<li className="subnav-li">
-					<a href="/skisenter/skiskole.html" className={`${location.pathname === '/skisenter/skiskole.html' ? "active-sub" : ""}`}>
+					<Link to="/skiskole" className={`${window.location.pathname === '/skiskole' ? "active-sub" : ""}`}>
 						Skiskole
-					</a>
+					</Link>
 				</li>
 				<li className="subnav-li">
-					<a href="/skisenter/langrenn.html" className={`${location.pathname === '/skisenter/langrenn.html' ? "active-sub" : ""}`}>
+					<Link to="/langrenn" className={`${window.location.pathname === '/langrenn' ? "active-sub" : ""}`}>
 						Langrenn
-					</a>
+					</Link>
 				</li>
 				<li className="subnav-li">
-					<a href="/skisenter/skishop.html" className={`${location.pathname === '/skisenter/skishop.html' ? "active-sub" : ""}`}>
+					<Link to="/skishop" className={`${window.location.pathname === '/skisenter/skishop' ? "active-sub" : ""}`}>
 						Skishop
-					</a>
+					</Link>
 				</li>
 			</ul>
 		</div>

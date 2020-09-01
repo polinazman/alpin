@@ -5,12 +5,13 @@ function createData(dato, apningstider) {
 }
 
 const data = [
-	createData('16.11.19 - 21.12.19', 'Lørdag - søndag 10:00 - 15:30'),
-	createData('21.12.19 - 17.01.20', 'Mandag - søndag 10:00 - 15:30'),
-	createData('18.01.20 - 07.02.20', 'Mandag - søndag 10:00 - 16:00'),
-	createData('08.02.20 - 23.02.20', 'Mandag - søndag 10:00 - 16:30'),
-	createData('24.02.20 - 03.04.20', 'Mandag - søndag 10:00 - 16:00'),
-	createData('04.04.20 - 12.04.20', 'Mandag - søndag 10:00 - 16:30'),
+	createData('21.11.20 - 18.12.20', 'Lørdag - søndag 10:00 - 15:30'),
+	createData('19.12.20 - 15.01.21', 'Mandag - søndag 10:00 - 15:30'),
+	createData('16.01.21 - 12.02.21', 'Mandag - søndag 10:00 - 16:00'),
+	createData('13.02.21 - 28.02.21', 'Mandag - søndag 10:00 - 16:30'),
+	createData('01.03.21 - 26.03.21', 'Mandag - søndag 10:00 - 16:00'),
+	createData('27.03.21 - 05.04.21', 'Mandag - søndag 10:00 - 16:30'),
+	createData('06.04.21 - 11.04.21', 'Mandag - søndag 10:00 - 16:00'),
 ]
 
 function ApentSkipass() {

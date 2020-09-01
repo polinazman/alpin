@@ -5,28 +5,25 @@ function createData(personer, hour1, hour2, hour3, hour4) {
 }
 
 const data = [
-	createData('1 person', 530, 780, 1035, 1285),
-	createData('2 personer', 360, 545, 730, 915),
-	createData('3 personer', 310, 485, 650, 825),
-	createData('4-5 personer', 275, 440, 615, 790),
+	createData('1 person', 550, 820, 1085, 1350),
+	createData('2 personer', 380, 575, 765, 960),
+	createData('3 personer', 325, 510, 680, 870),
+	createData('4-5 personer', 290, 465, 645, 830),
 ]
-
-function createData2(hours, price) {
-  return { hours, price };
-}
 
 const data2 = [
 	createData('', 'Pris pr. pers'),
-	createData('4 timer', 770)
+	createData('4 timer', 810)
 ]
 
 function PriserSkiskole() {
 	return (
 		<>
-			<h3>Skiskole</h3>
-			<p>En time er 45 minutter <br/>(Priser oppgitt i NOK)</p>
 			<table className="custom-table">
 				<thead>
+					<tr>
+						<td>En time er 45 minutter (Priser oppgitt i NOK)</td>
+					</tr>
 					<tr>
 				      <th>Undervisning</th>
 				      <th>1 time</th>
@@ -59,7 +56,6 @@ function PriserSkiskole() {
 						<tr key={index}>
 							<td>{data2.personer}</td>
 							<td>{data2.hour1}</td>
-							<td>{data2.hour2}</td>
 						</tr>
 					))}
 				</tbody>

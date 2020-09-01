@@ -20,6 +20,15 @@ body {
 	font-family: 'Lato Regular';
 }
 
+p {
+	font-family: Roboto;
+}
+
+h2 {
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+}
+
 .banner {
 	height: 80vh;
 	object-fit: cover;
@@ -81,13 +90,14 @@ body {
 .contentContainer {
 	margin-left: 12%;
 	margin-right: 12%;
-	margin-bottom: 3rem;
+	margin-bottom: 2rem;
+	margin-top: 3rem;
 }
 
 .link {
-		color: #009DD1;
-		font-weight: bold;
-		text-decoration: none;
+	color: #009DD1;
+	font-weight: bold;
+	text-decoration: none;
 }
 
 textarea {
@@ -95,20 +105,19 @@ textarea {
 }
 
 .copy {
-	width: 70%;
+	width: 85%;
 	padding: 15px 0;
-	font-size: 1.1em;
+	font-size: 1.2em;
 	font-family: Roboto;
 }
 
 .contentGrid {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: space-between;
 
 	.featuredImg {
-		width: 300px;
-		height: 205px;
+		height: 215px;
 		object-fit: cover;
 	}
 
@@ -121,18 +130,24 @@ textarea {
 	display: flex;
 	flex-direction: column;
 	flex: 1 0 auto;
-	width: 300px;
+	max-width: 500px;
+	min-width: 320px;
 	margin-bottom: 35px;
 
 	p {
 		flex: 1;
 		margin: 0.25rem 0;
 		width: 300px;
+		font-size: 1.2em;
 	}
 
 	.link {
 		width: 300px;
 		margin: 0.5rem 0;
+	}
+
+	li {
+		max-width: 70%;
 	}
 }
 
@@ -144,6 +159,7 @@ textarea {
 
 .video {
 	max-width: 470px;
+	min-width: 351px;
 	height: 315px;
 }
 
@@ -154,18 +170,27 @@ textarea {
 
 .lightwidget-widget { 
 	width: 80%;
-	height: 260px;
+	min-height: 300px;
 	border: 0;
 	overflow:hidden; 
 }
 
+.featuredImg.bannerImg {
+	width: 100%;
+	margin-top: 1.5rem;
+}
+
 .tabs {
-	margin: 1.5rem auto;
+	margin: 0 auto;
 }
 
 .tab-list {
   border-bottom: 1px solid #ccc;
   padding-left: 0;
+  margin-bottom: 2.2rem;
+  display: flex;
+  justify-content: center;
+  font-size: 1.1em;
 }
 
 .tab-list-item {
@@ -174,10 +199,6 @@ textarea {
   margin-bottom: -1px;
   padding: 0.5rem 1rem;
   cursor: pointer;
-
-  &:first-child {
-  	margin-left: 12%;
-  }
 }
 
 .tab-list-active {
@@ -189,6 +210,39 @@ textarea {
 .tab-content {
 	margin-left: 12%;
 	margin-right: 12%;
+	margin-bottom: 3rem;
+}
+
+.doc-link {
+	transition: transform .2s;
+
+	&:hover {
+		transform: scale(1.02);
+	}
+}
+
+hr.line {
+	border-width: 15px;
+	border-style: solid;
+	margin: 0;
+	width: 1px;
+	border-radius: 15px;
+}
+
+hr.line.greenline {
+	border-color: green;
+}
+
+hr.line.blueline {
+	border-color: blue;
+}
+
+hr.line.redline {
+	border-color: red;
+}
+
+hr.line.blackline {
+	border-color: black;
 }
 
 .footer {

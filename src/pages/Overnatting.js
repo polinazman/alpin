@@ -1,18 +1,17 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 
-import Navigation from 'components/navigation/Navigation';
-import Title from 'components/layout/Title';
-import Tabs from 'components/layout/Tabs';
-import Footer from 'components/footer/Footer';
+import Navigation from '../components/navigation/Navigation';
+import Title from '../components/layout/Title';
+import Tabs from '../components/layout/Tabs';
+import Footer from '../components/footer/Footer';
+import Banner from '../media/overnatting.jpg';
+import '../sass/style.scss';
 
-const banner = require('../media/overnatting.jpg');
-const scss = require("../sass/style.scss");
-
-const overnatting = (
-	<>
+function Overnatting() {
+	return (
+		<>
 			<Navigation />
-			<div style={{backgroundImage: `url(${banner})`}} className="banner">
+			<div style={{backgroundImage: `url(${Banner})`}} className="banner">
 				<div></div>
 				<div className="widget center">
 					<h1>Overnatting</h1>
@@ -21,7 +20,6 @@ const overnatting = (
 				</div>
 			</div>
 			<div className="contentContainer">
-				<Title title="Overnatting" />
 			</div>
 			<Tabs>
 				<div label="Hotell">
@@ -33,7 +31,7 @@ const overnatting = (
 							<a className="link" href="https://straand.no/" target="_blank" rel="noopener">Besøk hjemmeside</a>
 						</div>
 						<div className="gridContainer">
-							<img src="https://scontent-arn2-1.xx.fbcdn.net/v/t31.0-0/p640x640/18673236_1743057052378199_2822387989622449312_o.jpg?_nc_cat=107&_nc_sid=dd9801&_nc_ohc=bK850jWQjKcAX_PwbYc&_nc_ht=scontent-arn2-1.xx&_nc_tp=6&oh=e720e454de94ca25165cf4bc1bf1bea6&oe=5F088D8F" className="featuredImg" alt="" />
+							<img src="https://images.citybreak.com/image.aspx?ImageId=2830667" className="featuredImg" alt="" />
 							<h3>Seljord Hotel</h3>
 							<p>Seljord Hotel ligger 30km unna Vrådal.</p>
 							<p>Det er lite og intimt med overnatting i 21 rom – 18 dobbeltrom og 3 familierom med 4 sengeplasser. </p>
@@ -44,7 +42,7 @@ const overnatting = (
 				<div label="Hytteutleie">
 					<div className="contentGrid">
 						<div className="gridContainer">
-							<img src="https://vraadalbooking.no/wp-content/uploads/2017/03/VBHytte.jpg" className="featuredImg" alt="" /> 
+							<img src="http://alpin.no/wp-content/uploads/2016/03/215_hytte2.jpg" className="featuredImg" alt="" /> 
 							<h3>Vrådal Booking</h3>
 							<p>Vrådal Booking har utleie av hytter, leiligheter og hotellrom i Vrådal. De fleste av hyttene og leilighetene ligger i gangavstand til Vrådal Panorama Skisenter.</p>
 							<a className="link" href="https://vraadalbooking.no/" target="_blank" rel="noopener">Besøk hjemmeside</a>
@@ -69,8 +67,8 @@ const overnatting = (
 					</div>
 				</div>
 			</Tabs>
-			<Footer />
 		</>
-);
+	)
+};
 
-ReactDOM.render(overnatting, document.getElementById('page'));
+export default Overnatting;

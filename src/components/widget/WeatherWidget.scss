@@ -10,6 +10,11 @@
 	img {
 		height: 40px;
 		padding-right: 15px;
+
+		&:hover {
+			color: #003D52;
+			fill: currentColor;
+		}
 	}
 
 	span {
@@ -20,6 +25,10 @@
 	a {
 		text-decoration: none;
 		color: #FFF;
+	}
+
+	h1 {
+		font-weight: 500;
 	}
 
 	h1, p {
@@ -40,6 +49,17 @@
 		display: inline-block;
 		padding-right: 10px;
 	}
+
+	span {
+		&:hover {
+			color: #003D52;
+		}
+	}
+}
+
+.widget p {
+	font-family: 'Lato Regular';
+	font-size: 1.15em;
 }
 
 @media only screen and (max-width: 768px) {

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import {Link} from 'react-router-dom';
 import { BLOG_API } from '../../constants/BLOG_API';
 
-const scss = require("./BlogPosts.scss");
+import "./BlogPosts.scss";
 
 function BlogPosts() {
 	const [posts, setPosts] = useState([]);
@@ -18,11 +18,13 @@ function BlogPosts() {
 			{posts.map((post, index) => (
 				<div key={post.id} id={post.id} className="postContainer">
 					<img className="featuredImg" src={post._embedded['wp:featuredmedia']['0'].source_url} alt={post._embedded['wp:featuredmedia']['0'].alt_text} />
-					<h3>{new Date(post.date).toLocaleDateString()}</h3>
-					<h2 dangerouslySetInnerHTML={{__html: post.title.rendered}} />
+					<h3 dangerouslySetInnerHTML={{__html: post.title.rendered}} />
 					<div className="excerpt" dangerouslySetInnerHTML={{__html: post.excerpt.rendered}} />
-					<Link to={"/post/" + post.id} className="link">Les mer
-					</Link>
+					<div className="postDetails">
+						<Link to={"/post/" + post.id} className="link">Les mer
+						</Link>
+						<p className="postDate">{new Date(post.date).toLocaleDateString()}</p>
+					</div>
 				</div>
 			))}
 		</div> 

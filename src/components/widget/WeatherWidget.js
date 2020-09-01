@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { ReactSVG } from 'react-svg';
 
-const scss = require("./WeatherWidget.scss");
+import "./WeatherWidget.scss";
 
 const WEATHER_API = 'https://api.fnugg.no/get/resort/114?sourceFields=name,opening_hours,location,contact,lifts,slopes,conditions';
 
@@ -42,13 +42,13 @@ function WeatherWidget () {
 			</span>
 		</div>
 		<div className="conditions">
-			<a href="/skisenter/langrenn">
+			<a href="/langrenn">
 				<p>Skiløyper</p>
 				<img src={require('../../media/cross-country.png')} alt="Cross-country ski icon"/>
 			</a>
 		</div>
 		<div className="conditions">
-			<a href="/webcamera.html">
+			<a href="/webcamera">
 				<p>Webcamera</p>
 				<img src={require('../../media/webcam.png')} alt="Webcam icon"/>
 			</a>

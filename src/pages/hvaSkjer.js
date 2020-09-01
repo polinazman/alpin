@@ -1,30 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Navigation from 'components/navigation/Navigation';
-import Title from 'components/layout/Title';
-import Kalender from 'components/calendar/Kalender';
-import Footer from 'components/footer/Footer';
+import Navigation from '../components/navigation/Navigation';
+import Kalender from '../components/calendar/Kalender';
+import Footer from '../components/footer/Footer';
+import Banner from '../media/hvaskjer2.jpg';
 
-const scss = require("../sass/style.scss");
+import '../sass/style.scss';
 
-const banner = require('../media/hvaskjer.jpg');
-
-const hvaSkjer = (
-	<>
-		<Navigation />
-		<div style={{backgroundImage: `url(${banner})`}} className="banner">
-			<div></div>
-			<div className="widget">
-				<h1>Hva skjer</h1>
+function HvaSkjer() {
+	return (
+		<>
+			<Navigation />
+			<div style={{backgroundImage: `url(${Banner})`}} className="banner">
+				<div></div>
+				<div className="widget center">
+					<h1>Hva skjer?</h1>
+					<p>Kalender for vinteren 2020/2021</p>
+				</div>
 			</div>
-		</div>
-		<div className="contentContainer">
-			<Title title="Ting å gjøre" />
-			<Kalender />
-		</div>
-		<Footer />
-	</>
-);
+			<div className="contentContainer">
+				<Kalender />
+			</div>
+		</>
+	)
+};
 
-ReactDOM.render(hvaSkjer, document.getElementById('page'));
+export default HvaSkjer;
