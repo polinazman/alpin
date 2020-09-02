@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a5741978b537bb3817e505ca1e0b7a00",
+    "revision": "75fd386883e25deba6d6f68487d212e3",
     "url": "/alpin/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/alpin/static/css/2.77b22cec.chunk.css"
   },
   {
-    "revision": "48ab9fba9c7fd3f4f2f4",
+    "revision": "827b126de6eb265a688a",
     "url": "/alpin/static/css/main.212bc1de.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/alpin/static/js/2.484f7be0.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "48ab9fba9c7fd3f4f2f4",
-    "url": "/alpin/static/js/main.e0b9d79e.chunk.js"
+    "revision": "827b126de6eb265a688a",
+    "url": "/alpin/static/js/main.13d0306b.chunk.js"
   },
   {
     "revision": "3a8314ac0e99cd49cefb",
