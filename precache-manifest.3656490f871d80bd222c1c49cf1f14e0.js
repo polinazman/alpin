@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "874d9c8cbccca7512b89b18b60b46fc9",
+    "revision": "2c4e7dc303736e7ae457ae0102ca86e3",
     "url": "/alpin/index.html"
   },
   {
-    "revision": "b6538cbe8a57a0fbf826",
+    "revision": "92d82255a68271929afa",
     "url": "/alpin/static/css/2.77b22cec.chunk.css"
   },
   {
-    "revision": "73d74dd340b2a0bda42a",
-    "url": "/alpin/static/css/main.212bc1de.chunk.css"
+    "revision": "e022995cea66bd75925c",
+    "url": "/alpin/static/css/main.8b60c948.chunk.css"
   },
   {
-    "revision": "b6538cbe8a57a0fbf826",
-    "url": "/alpin/static/js/2.484f7be0.chunk.js"
+    "revision": "92d82255a68271929afa",
+    "url": "/alpin/static/js/2.73fad711.chunk.js"
   },
   {
     "revision": "9bc3a6e2085c995a92a9e899a619efb8",
-    "url": "/alpin/static/js/2.484f7be0.chunk.js.LICENSE.txt"
+    "url": "/alpin/static/js/2.73fad711.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "73d74dd340b2a0bda42a",
-    "url": "/alpin/static/js/main.8d5c348b.chunk.js"
+    "revision": "e022995cea66bd75925c",
+    "url": "/alpin/static/js/main.a287b83d.chunk.js"
   },
   {
     "revision": "3a8314ac0e99cd49cefb",
@@ -38,6 +38,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "98468036d3b1cdbb32633c200b9a7cde",
     "url": "/alpin/static/media/alpin.98468036.jpg"
+  },
+  {
+    "revision": "5592379c291b7aaba65587611c0084ee",
+    "url": "/alpin/static/media/bo-sommerland.5592379c.jpg"
   },
   {
     "revision": "7cbda2c78db342b1eeda364658b79f92",
@@ -102,6 +106,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "b05b468833bdfc9dddaba4ac3edc4c08",
     "url": "/alpin/static/media/sommer.b05b4688.jpg"
+  },
+  {
+    "revision": "cd6ca352bfd8c77fc846944144c508cd",
+    "url": "/alpin/static/media/straand-sommerland.cd6ca352.jpg"
   },
   {
     "revision": "f712adb9cc404e38207335020e858459",
