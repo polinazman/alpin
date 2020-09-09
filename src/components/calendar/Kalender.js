@@ -15,7 +15,7 @@ export default class Kalender extends Component {
 		.then(response => response.json())
 		.then(json => {
 			this.setState({ calendarEvents: json.events.map(event => (
-					{title: event.title, date: event.start_date, id: event.id, url: "/event/" + event.id }
+					{title: event.title, date: event.start_date, id: event.id, url: "/#/event/" + event.id }
 				))})
 		})
 		.catch(console.log)

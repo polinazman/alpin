@@ -11,10 +11,6 @@ function OmVradal() {
 		<>
 			<Navigation />
 			<div style={{backgroundImage: `url(${banner})`}} className="banner">
-				<div></div>
-				<div className="widget">
-					<h1>Om Vrådal</h1>
-				</div>
 			</div>
 			<div className="contentContainer">
 				<Title title="Vrådal - Norges beste helårs feriested" />

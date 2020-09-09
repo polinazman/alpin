@@ -2,7 +2,6 @@ import React from 'react';
 
 import Navigation from '../components/navigation/Navigation';
 import Title from '../components/layout/Title';
-import Footer from '../components/footer/Footer';
 import Banner from '../media/reise.jpg';
 import '../sass/style.scss';
 
@@ -11,13 +10,9 @@ function Reise() {
 		<>
 			<Navigation />
 			<div style={{backgroundImage: `url(${Banner})`}} className="banner">
-				<div></div>
-				<div className="widget">
-					<h1>Reise</h1>
-				</div>
 			</div>
 			<div className="contentContainer">
-				<Title title="Veien til Vrådal"/>
+				<Title title="Reise til Vrådal"/>
 				<div className="copy">
 					Oslo - Vrådal 211 km
 				</div>

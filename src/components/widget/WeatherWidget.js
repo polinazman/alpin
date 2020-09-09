@@ -19,7 +19,7 @@ function WeatherWidget () {
 		<div className="conditions">
 			<a href="https://www.yr.no/sted/Norge/Vestfold_og_Telemark/Kviteseid/Vr%C3%A5dal_skisenter/langtidsvarsel.html" target="_blank" rel="noopener">
 				<p>Vær</p>
-				{conditions && conditions._source && <ReactSVG  className ="weatherIcon" src={"../../media/resort-weather-" + conditions._source.conditions.combined.bottom.symbol.fnugg_id + ".svg" } /> }
+				{conditions && conditions._source && <ReactSVG  className ="weatherIcon" src={"./img/resort-weather-" + conditions._source.conditions.combined.bottom.symbol.fnugg_id + ".svg" } /> }
 				<span>
 					{conditions && conditions._source ? conditions._source.conditions.combined.bottom.temperature.value : ''} &deg;C
 				</span>
@@ -42,13 +42,13 @@ function WeatherWidget () {
 			</span>
 		</div>
 		<div className="conditions">
-			<a href="/langrenn">
+			<a href="/#/langrenn">
 				<p>Skiløyper</p>
 				<img src={require('../../media/cross-country.png')} alt="Cross-country ski icon"/>
 			</a>
 		</div>
 		<div className="conditions">
-			<a href="/webcamera">
+			<a href="/#/webcamera">
 				<p>Webcamera</p>
 				<img src={require('../../media/webcam.png')} alt="Webcam icon"/>
 			</a>

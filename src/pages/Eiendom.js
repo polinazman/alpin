@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 
 import Navigation from '../components/navigation/Navigation';
 import Title from '../components/layout/Title';
+import Tabs from '../components/layout/Tabs';
 import Banner from '../media/eiendom.jpg';
 
 import '../sass/style.scss';
@@ -12,26 +13,31 @@ function Eiendom() {
 		<>
 			<Navigation />
 			<div style={{backgroundImage: `url(${Banner})`}} className="banner">
-				<div></div>
-				<div className="widget">
-					<h1>Eiendom</h1>
-				</div>
 			</div>
 			<div className="contentContainer">
-				<Title title="Hytter og tomter i Vrådal"/>
-				<div className="copy">
-					Kontaktperson angående tomter <br/>
-					Leif Larsen <br/>
-					Ansvarlig uteanlegg. veier m.m <br/>
-					Mobil: + 47 476 01 003 <br/>
-					E-mail: leif@alpin.no
-				</div>
-				<div className="copy">
-					Petter Johnsen <br/>
-					Mobil: +47 908 28 976 <br/>
-					E-mail: petter@alpin.no 
-				</div>
 			</div>
+			<Tabs>
+				<div label="Hytter">
+					<h2>Disse bygger i Vrådal</h2>
+					<div className="contentGrid">
+						<div className="gridContainer">
+							<img src="https://r-cf.bstatic.com/images/hotel/max500/374/37471548.jpg" className="featuredImg" alt="" /> 
+							<h3>Buen Gruppen</h3>
+							<p>Selger: </p>
+						</div>
+						<div className="gridContainer">
+							<img src="https://r-cf.bstatic.com/images/hotel/max500/374/37471548.jpg" className="featuredImg" alt="" /> 
+							<h3>Byggmaker - Seljord Elektriske</h3>
+							<p>Selger: </p>
+						</div>
+
+					</div>
+				</div>
+				<div label="Tomter">
+					<div className="contentGrid">
+					</div>
+				</div>
+			</Tabs>
 		</>
 	)
 };

@@ -7,13 +7,13 @@ const Footer = () => {
 				<h3>Om oss</h3>
 				<ul>
 					<li>
-						<a href="/skisenter">Om skisenteret</a>
+						<a href="/#/skisenter">Om skisenteret</a>
 					</li>
 					<li>
-						<a href="/kontakt-oss">Kontakt oss</a>
+						<a href="/#/kontakt-oss">Kontakt oss</a>
 					</li>
 					<li>
-						<a href="/reise">Reisen til Vrådal</a>
+						<a href="/#/reise">Reisen til Vrådal</a>
 					</li>
 				</ul>
 			</div>
@@ -21,13 +21,13 @@ const Footer = () => {
 				<h3>Skiferie</h3>
 				<ul>
 					<li>
-						<a href="/overnatting">Overnatting</a>
+						<a href="/#/overnatting">Overnatting</a>
 					</li>
 					<li>
-						<a href="/servering">Mat og drikke</a>
+						<a href="/#/servering">Mat og drikke</a>
 					</li>
 					<li>
-						<a href="/hva-skjer">Arrangement</a>
+						<a href="/#/hva-skjer">Arrangement</a>
 					</li>
 				</ul>
 			</div>
