@@ -1,1 +1,1 @@
-export const BLOG_API = 'http://alpin.no/wp-json/wp/v2/posts';
+export const BLOG_API = 'https://alpin.no/wp-json/wp/v2/posts';
